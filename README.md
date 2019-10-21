@@ -29,3 +29,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+<!-- MARKDOWN LINKS -->
+[Hacktober-shield]: https://img.shields.io/badge/Hacktoberfest-2019-blueviolet?style=flat-square
