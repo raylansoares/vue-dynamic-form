@@ -88,49 +88,7 @@
                 text: "Vue Dynamic Form",
                 logo: require('../assets/logo.png')
             },
-            formData: {
-                action: '/',
-                fields: [
-                    {
-                        type: "text",
-                        name: "name",
-                        label: "Name",
-                        required: true,
-                        width: "half",
-                        value: null
-                    },
-                    {
-                        type: "select",
-                        name: "subject",
-                        label: "Subject",
-                        required: true,
-                        width: "half",
-                        options: [
-                            {
-                                value: 'foo',
-                                text: 'Foo'
-                            },
-                            {
-                                value: 'bar',
-                                text: 'Bar'
-                            },
-                            {
-                                value: 'fizz',
-                                text: 'Fizz'
-                            }
-                        ],
-                        value: null
-                    },
-                    {
-                        type: "textarea",
-                        name: "message",
-                        label: "Message",
-                        required: false,
-                        width: "full",
-                        value: null
-                    }
-                ]
-            }
+            formData: require('../content/form.json')
         }),
         methods: {
             sendForm() {
