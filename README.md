@@ -1,3 +1,5 @@
+![Hacktober-shield]
+
 # vue-template
 
 ## Project setup
