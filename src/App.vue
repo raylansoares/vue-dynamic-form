@@ -16,7 +16,7 @@
         components: {
             AppNavigation,
             AppFooter,
-            AppContent
+            AppContent,
         },
         data: () => ({}),
     }

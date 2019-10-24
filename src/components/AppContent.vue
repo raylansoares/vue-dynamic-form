@@ -20,39 +20,11 @@
                             </v-col>
                         </v-row>
                         <v-row>
-                            <v-col v-for="item in formData.fields" cols="12" sm="12"
-                                   :md="item.width === 'half' ? 6 : 12">
-                                <v-text-field
-                                        v-if="item.type === 'text'"
-                                        :rules="item.required ? ruleRequired : []"
-                                        :name="item.name"
-                                        :label="item.label"
-                                        :color="configData.color"
-                                        v-model="item.value"
-                                        outlined clearable hide-details>
-                                </v-text-field>
-                                <v-select
-                                        v-if="item.type === 'select'"
-                                        :rules="item.required ? ruleRequired : []"
-                                        :name="item.name"
-                                        :label="item.label"
-                                        :color="configData.color"
-                                        v-model="item.value"
-                                        :items="item.options"
-                                        item-value="value"
-                                        item-text="text"
-                                        outlined clearable hide-details>
-                                </v-select>
-                                <v-textarea
-                                        v-if="item.type === 'textarea'"
-                                        :rules="item.required ? ruleRequired : []"
-                                        :name="item.name"
-                                        :label="item.label"
-                                        :color="configData.color"
-                                        v-model="item.value"
-                                        outlined clearable hide-details auto-grow>
-                                </v-textarea>
-                            </v-col>
+                           <AppFormRenderer
+                                :formSpecification="formData"
+                                :ruleRequired="ruleRequired"
+                                :configData="configData"
+                            />
                         </v-row>
                         <v-row>
                             <v-col cols="12" sm="4" offset-sm="4" class="text-center">
@@ -75,6 +47,8 @@
 </template>
 
 <script>
+    import AppFormRenderer from "./AppFormRenderer.vue";
+
     export default {
         data: () => ({
             valid: true,
@@ -90,6 +64,9 @@
             },
             formData: require('../content/form.json')
         }),
+        components: {
+            AppFormRenderer,
+        },
         methods: {
             sendForm() {
                 if (this.$refs.form.validate()) {
