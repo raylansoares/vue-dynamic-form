@@ -3,6 +3,7 @@
         <v-row>
            <v-col
                 v-for="item in formSpecification.fields"
+                :key="item.name"
                 cols="12"
                 sm="12"
                 :md="item.width === 'half' ? 6 : 12"
