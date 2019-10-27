@@ -1,5 +1,4 @@
 <template>
-    <div>
         <v-row>
            <v-col
                 v-for="item in formSpecification.fields"
@@ -40,7 +39,6 @@
             </v-col>
 
         </v-row>
-    </div>
 </template>
 <script>
 export default {
