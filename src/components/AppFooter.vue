@@ -1,17 +1,19 @@
 <template>
-    <v-footer app :color="configData.color" dark>
-        <span>Vue dynamic form</span>
+    <v-footer app :color="config.footerColor" dark>
+        <span>{{ config.footerLeftText }}</span>
         <div class="flex-grow-1"></div>
-        <span>&copy; 2019</span>
+        <span>{{ config.footerRightText }}</span>
     </v-footer>
 </template>
 
 <script>
     export default {
-        data: () => ({
-            configData: {
-                color: "darken"
+        props: {
+            config: {
+                type: Object,
+                required: true
             }
-        }),
+        },
+        data: () => ({}),
     };
 </script>

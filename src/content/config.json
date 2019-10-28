@@ -1,0 +1,13 @@
+{
+  "showHeader": true,
+  "headerColor": "primary",
+  "headerLeftText": "Header Left Text",
+  "headerRightText": "Header Right Text",
+  "showFooter": true,
+  "footerColor": "darken",
+  "footerLeftText": "Footer Left Text",
+  "footerRightText": "Footer Right Text",
+  "formTitle": "Form Title",
+  "formDescription": "Form description...",
+  "showLogo": true
+}

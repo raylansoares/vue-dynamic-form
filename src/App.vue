@@ -1,8 +1,8 @@
 <template>
     <v-app id="inspire">
-        <AppNavigation/>
-        <AppContent/>
-        <AppFooter/>
+        <AppNavigation v-if="data.config.showHeader" :config="data.config"/>
+        <AppContent :data="data"/>
+        <AppFooter v-if="data.config.showFooter" :config="data.config"/>
     </v-app>
 </template>
 
@@ -18,6 +18,11 @@
             AppFooter,
             AppContent
         },
-        data: () => ({}),
+        data: () => ({
+            data: {
+                config: require('./content/config'),
+                form: require('./content/form.json')
+            }
+        }),
     }
 </script>

@@ -10,11 +10,19 @@
       "value": null
     },
     {
+      "type": "text",
+      "name": "email",
+      "label": "E-mail",
+      "required": true,
+      "width": "half",
+      "value": null
+    },
+    {
       "type": "select",
       "name": "subject",
       "label": "Subject",
       "required": true,
-      "width": "half",
+      "width": "full",
       "options": [
         {
           "value": "foo",
