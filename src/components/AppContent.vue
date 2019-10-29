@@ -27,7 +27,6 @@
 						<v-row>
 							<AppFormRenderer
 								:formSpecification="data.form"
-								:ruleRequired="ruleRequired"
 								:configData="data.config"
 							/>
 						</v-row>
@@ -65,9 +64,6 @@ export default {
 		valid: true,
 		loader: null,
 		sent: false,
-		ruleRequired: [
-			value => !!value || "Required."
-		],
 		logo: require('../assets/logo.png')
 	}),
 	components: {
