@@ -1,9 +1,9 @@
 <template>
 	<v-content>
-		<v-form ref="form" v-model="valid" lazy-validation>
-			<v-container>
-				<v-row align="center" justify="center">
-					<v-col cols="12" sm="8" md="8" lg="8">
+		<v-container fluid>
+			<v-row align="center" justify="center">
+				<v-col cols="12" sm="8" md="8" lg="8">
+					<v-form ref="form" v-model="valid" lazy-validation>
 						<v-row align="center" justify="center" v-if="data.config.showLogo">
 							<v-img :src="logo" max-width="100px" position="center" class="logo"></v-img>
 						</v-row>
@@ -25,10 +25,12 @@
 							</v-col>
 						</v-row>
 						<v-row>
-							<AppFormRenderer
-								:formSpecification="data.form"
-								:configData="data.config"
-							/>
+							<v-col cols="12" class="text-center">
+								<AppFormRenderer
+									:formSpecification="data.form"
+									:configData="data.config"
+								/>
+							</v-col>
 						</v-row>
 						<v-row>
 							<v-col cols="12" sm="4" offset-sm="4" class="text-center">
@@ -43,10 +45,10 @@
 								</v-btn>
 							</v-col>
 						</v-row>
-					</v-col>
-				</v-row>
-			</v-container>
-		</v-form>
+					</v-form>
+				</v-col>
+			</v-row>
+		</v-container>
 	</v-content>
 </template>
 

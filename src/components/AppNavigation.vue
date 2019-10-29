@@ -1,11 +1,9 @@
 <template>
-	<div>
-		<v-app-bar app clipped-right :color="config.headerColor" dark elevate-on-scroll>
-			<v-toolbar-title>{{ config.headerLeftText }}</v-toolbar-title>
-			<div class="flex-grow-1"></div>
-			<v-toolbar-title>{{ config.headerRightText }}</v-toolbar-title>
-		</v-app-bar>
-	</div>
+	<v-app-bar app clipped-right :color="config.headerColor" dark elevate-on-scroll>
+		<v-toolbar-title>{{ config.headerLeftText }}</v-toolbar-title>
+		<div class="flex-grow-1"></div>
+		<v-toolbar-title>{{ config.headerRightText }}</v-toolbar-title>
+	</v-app-bar>
 </template>
 
 <script>
