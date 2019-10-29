@@ -20,9 +20,15 @@ export default {
 	},
 	data: () => ({
 		data: {
-			config: require('./content/config'),
+			config: require('./content/config.json'),
 			form: require('./content/form.json')
 		}
 	}),
+	created() {
+		const descEl = document.querySelector('head meta[name="description"]');
+		const titleEl = document.querySelector('head title');
+		descEl.setAttribute('content', this.data.config.formDescription);
+		titleEl.textContent = this.data.config.formTitle;
+	}
 };
 </script>
