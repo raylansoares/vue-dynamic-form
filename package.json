@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "watch": "vue-cli-service serve --watch",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -21,44 +22,12 @@
     "@vue/cli-service": "^3.11.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
     "vue-cli-plugin-vuetify": "^0.6.3",
-    "vue-template-compiler": "^2.6.10"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {
-      "vue/html-indent": [
-        "error",
-        "tab",
-        {
-          "attribute": 1,
-          "closeBracket": 0,
-          "alignAttributesVertically": true,
-          "ignores": []
-        }
-      ],
-      "vue/prop-name-casing": "off",
-      "import/no-extraneous-dependencies": "off",
-      "indent": ["error", "tab", {"SwitchCase": 1}],
-      "semi": ["error", "always"],
-      "no-else-return": "error",
-      "eol-last": ["error", "always"],
-      "no-tabs": "off",
-      "no-param-reassign": "off",
-      "no-underscore-dangle": "off",
-      "camelcase": "off"
-    }
+    "vue-template-compiler": "^2.6.10",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-vue": "^5.2.3"
   },
   "postcss": {
     "plugins": {
