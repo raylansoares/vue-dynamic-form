@@ -9,45 +9,53 @@
 		>
 			<v-text-field
 				v-if="item.type === 'text'"
+				v-model="item.value"
 				:rules="item.required ? ruleRequired : []"
 				:name="item.name"
 				:label="item.label"
 				:color="configData.color"
-				v-model="item.value"
-				outlined clearable hide-details>
-			</v-text-field>
+				outlined
+				clearable
+				hide-details
+			/>
 			<v-text-field
 				v-if="item.type === 'email'"
+				v-model="item.value"
 				:rules="item.required ? ruleRequired.concat(ruleEmail) : ruleEmail"
 				:name="item.name"
 				:label="item.label"
 				:color="configData.color"
-				v-model="item.value"
-				outlined clearable hide-details>
-			</v-text-field>
+				outlined
+				clearable
+				hide-details
+			/>
 			<v-select
 				v-if="item.type === 'select'"
+				v-model="item.value"
 				:rules="item.required ? ruleRequired : []"
 				:name="item.name"
 				:label="item.label"
 				:color="configData.color"
-				v-model="item.value"
 				:items="item.options"
 				item-value="value"
 				item-text="text"
-				outlined clearable hide-details>
-			</v-select>
+				outlined
+				clearable
+				hide-details
+			/>
 			<v-textarea
 				v-if="item.type === 'textarea'"
+				v-model="item.value"
 				:rules="item.required ? ruleRequired : []"
 				:name="item.name"
 				:label="item.label"
 				:color="configData.color"
-				v-model="item.value"
-				outlined clearable hide-details auto-grow>
-			</v-textarea>
+				outlined
+				clearable
+				hide-details
+				auto-grow
+			/>
 		</v-col>
-
 	</v-row>
 </template>
 <script>
@@ -60,15 +68,15 @@ export default {
 		configData: {
 			type: Object,
 			default: () => {},
-		}
+		},
 	},
 	data: () => ({
 		ruleRequired: [
-			value => !!value || "Required."
+			value => !!value || 'Required.',
 		],
 		ruleEmail: [
 			v => (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) || !v) || 'E-mail must be valid',
 		],
-	})
+	}),
 };
 </script>
