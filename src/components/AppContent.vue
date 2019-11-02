@@ -59,7 +59,7 @@
 						<v-row v-if="sent">
 							<v-col
 								cols="12"
-								class="pa-0"
+								class="pb-0"
 							>
 								<v-alert
 									v-model="sent"
