@@ -9,5 +9,6 @@
   "footerRightText": "Footer Right Text",
   "formTitle": "Form Title",
   "formDescription": "Form description...",
-  "showLogo": true
+  "showLogo": true,
+  "successMessage": "Your message has been sent successfully!"
 }

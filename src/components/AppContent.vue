@@ -67,7 +67,7 @@
 									outlined
 									dismissible
 								>
-									Your message has been sent successfully!
+									{{ data.config.successMessage || 'Your message has been sent successfully!' }}
 								</v-alert>
 							</v-col>
 						</v-row>
