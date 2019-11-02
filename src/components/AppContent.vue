@@ -130,7 +130,7 @@ export default {
 		valid: true,
 		loader: null,
 		sent: false,
-		logo: require('../assets/logo.png')
+		logo: 'img/logo.png',
 	}),
 	methods: {
 		sendForm() {
