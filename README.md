@@ -1,5 +1,3 @@
-![Hacktober-shield]
-
 # Vue Dynamic Form
 A simple Vuejs application to build dynamic form based on a json file.
 
@@ -22,6 +20,3 @@ npm run build
 ```
 npm run lint
 ```
-
-<!-- MARKDOWN LINKS -->
-[Hacktober-shield]: https://img.shields.io/badge/Hacktoberfest-2019-blueviolet?style=flat-square
