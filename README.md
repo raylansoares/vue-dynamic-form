@@ -1,6 +1,13 @@
 # Vue Dynamic Form
 A simple Vuejs application to build dynamic form based on a json file.
 
+## Usage
+
+To generate a new form all you need to do is open the config files and fill with you own data.
+- First, open the file `src/content/config` and edit the general information on the form template like, title, description, header and footer.
+- Then, open the file `src/content/form` and edit with the fields you like.
+
+
 ## Project setup
 ```
 npm install
