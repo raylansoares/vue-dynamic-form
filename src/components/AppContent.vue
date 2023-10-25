@@ -137,7 +137,11 @@ export default {
 			if (this.$refs.form.validate()) {
 				this.sent = false;
 				this.loader = true;
-				setTimeout(() => (this.loader = false, this.$refs.form.reset(), this.sent = true), 2000);
+				setTimeout(() => {
+					this.loader = false;
+					this.$refs.form.reset();
+					this.sent = true;
+				}, 2000);
 			}
 		},
 	},
