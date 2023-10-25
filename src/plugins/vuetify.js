@@ -3,19 +3,14 @@ import Vue from 'vue';
 import Vuetify from 'vuetify';
 import 'vuetify/dist/vuetify.min.css';
 
+import colors from '../content/colors.json';
+
 Vue.use(Vuetify);
 
 export default new Vuetify({
 	theme: {
 		themes: {
-			light: {
-				primary: '#41b883',
-				darken: '#35495e',
-				error: '#FF5252',
-				info: '#2196F3',
-				success: '#4CAF50',
-				warning: '#FFC107',
-			},
+			light: colors,
 		},
 	},
 	icons: {
