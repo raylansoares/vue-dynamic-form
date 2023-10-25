@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import AppNavigation from './components/AppNavigation';
-import AppFooter from './components/AppFooter';
-import AppContent from './components/AppContent';
+import AppNavigation from './components/AppNavigation.vue';
+import AppFooter from './components/AppFooter.vue';
+import AppContent from './components/AppContent.vue';
 
 import configContent from './content/config.json';
 import formContent from './content/form.json';
